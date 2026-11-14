@@ -1,65 +1,106 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🏡 Shems Deroua (شمس الدروة) - Real Estate Website
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A responsive Arabic (RTL) real estate showcase website for **Shems Deroua**, a new residential development in Casablanca offering building plots (R+3 / R+4) and commercial units. Built with Laravel.
 
-## About Laravel
+## 🚀 Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Fully responsive, RTL Arabic landing page
+- Project presentation (plots R+3, R+4, commercial units, facilities)
+- Apartment plans and layouts with tabbed view
+- Offers section for individuals, developers and investors
+- Project facilities (shops, sports fields, schools, clinics, mosques, cafes...)
+- Customer testimonials slider
+- Contact page with form
+- Newsletter subscription (Mailchimp)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🖼️ Screenshots
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+_Add screenshots here (e.g. `docs/home.png`, `docs/contact.png`)._
 
-## Learning Laravel
+🌐 **Live Demo:** _[Insert deployed URL if available]_
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠️ Technologies Used
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Laravel 8
+- PHP 7.4+ / 8.x
+- MySQL
+- Blade templates
+- Bootstrap, HTML5, CSS3, JavaScript
+- Mailchimp API (newsletter)
 
-## Laravel Sponsors
+## ⚙️ Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Requirements: PHP, Composer and MySQL (XAMPP, WAMP or Laragon work fine).
 
-### Premium Partners
+### 1. Clone the repo
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+```bash
+git clone https://github.com/nourddine20/Les-Roches-Bensliman-Website.git
+cd Les-Roches-Bensliman-Website
+```
 
-## Contributing
+### 2. Install dependencies
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+composer install
+```
 
-## Code of Conduct
+### 3. Create the `.env` file and generate the app key
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-## Security Vulnerabilities
+### 4. Configure the database
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Create an empty database (for example `LesRochesBensliman_db`), then edit `.env`:
 
-## License
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=LesRochesBensliman_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Shemsdaroua-Website
+### 5. Run the migrations
+
+```bash
+php artisan migrate
+```
+
+### 6. Start the server
+
+```bash
+php artisan serve
+```
+
+Visit http://127.0.0.1:8000
+
+## 📧 Newsletter Setup (optional)
+
+The newsletter form uses Mailchimp. Add your own API key and list ID in the subscribe configuration, and never commit real keys to the repository.
+
+## 📂 Folder Structure
+
+```
+app/
+├── Http/
+├── Models/
+database/
+├── migrations/
+public/
+├── frontside/assets/   # CSS, JS, images, PHP scripts
+resources/
+├── views/              # Blade templates
+routes/
+├── web.php
+.env
+```
+
+## 📞 Contact (Project)
+
+- 📍 6bis rue des tilleuls, Casablanca
+- 📱 +212
