@@ -13,11 +13,19 @@ A responsive Arabic (RTL) real estate showcase website for **Shems Deroua**, a n
 - Contact page with form
 - Newsletter subscription (Mailchimp)
 
-## 🖼️ Screenshots
+## 📸 Demo
 
-_Add screenshots here (e.g. `docs/home.png`, `docs/contact.png`)._
+📽️ **Demo Video:** _[Insert YouTube link if available]_
 
 🌐 **Live Demo:** _[Insert deployed URL if available]_
+
+## 🖼️ Screenshots
+
+### Home Page
+![Home Page](docs/screenshots/home.png)
+
+### Contact Page
+![Contact Page](docs/screenshots/contact.png)
 
 ## 🛠️ Technologies Used
 
@@ -91,6 +99,8 @@ app/
 ├── Models/
 database/
 ├── migrations/
+docs/
+├── screenshots/        # README images
 public/
 ├── frontside/assets/   # CSS, JS, images, PHP scripts
 resources/
@@ -103,4 +113,17 @@ routes/
 ## 📞 Contact (Project)
 
 - 📍 6bis rue des tilleuls, Casablanca
-- 📱 +212
+- 📱 +212 668 194 832
+- ✉️ contact@shemsderoua.ma
+
+## 📄 License
+
+This project is open-source and free to use for educational and personal purposes.
+
+## 🙋‍♂️ Author
+
+Developed by **Noureddine**
+📧 aharbachnoureddine@gmail.com
+🔗 [GitHub Profile](https://github.com/nourddine20/)
+
+Original design by [Jokesigner SARL](https://jokesigner.com/)
